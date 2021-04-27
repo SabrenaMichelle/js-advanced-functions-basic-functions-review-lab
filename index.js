@@ -27,7 +27,8 @@ const Calculator={
 let actionApplyer = function(start, array){
     let  base = start
 
-    for (let i=0; i< ray.length; i++){
-        base = ray[i](a)
+    for (let i=0; i < array.length; i++ ){
+        base = array[i](base)
     }
+    return base
 }
